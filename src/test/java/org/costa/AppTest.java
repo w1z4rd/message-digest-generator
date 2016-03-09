@@ -13,7 +13,7 @@ import org.junit.Test;
 
 public class AppTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-    private static final String USAGE_MESSAGE = "Usage: java -jar MD5Generator.jar <algorithm> <password>\nAvailable algorithms: MD2 MD5 SHA-1 SHA-224 SHA-256 SHA-384 SHA-512\n";
+    private static final String USAGE_MESSAGE = "Usage: java -jar message-digest-generator-1.0-SNAPSHOT.jar <algorithm> <password>\nAvailable algorithms: MD2 MD5 SHA-1 SHA-224 SHA-256 SHA-384 SHA-512\n";
 
     @Before
     public void before() throws FileNotFoundException {

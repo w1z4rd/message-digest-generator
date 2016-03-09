@@ -24,10 +24,11 @@ public final class App {
         if (args.length != 2
                 || !ALGORITHMS.contains(args[0]
                     .toUpperCase(Locale.getDefault()))) {
-            System.out.println("Usage: java -jar MD5Generator.jar <algorithm>"
+            System.out.println("Usage: java -jar "
+                    + "message-digest-generator-1.0-SNAPSHOT.jar <algorithm>"
                     + " <password>");
             System.out.println("Available algorithms: MD2 MD5 SHA-1 SHA-224"
-                    + "SHA-256 SHA-384 SHA-512");
+                    + " SHA-256 SHA-384 SHA-512");
             return;
         }
         MessageDigest messageDigest = MessageDigest.getInstance(args[0]);
