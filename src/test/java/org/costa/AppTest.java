@@ -86,8 +86,8 @@ public class AppTest {
 
     @Test
     public void testWithSHA384Algorithm() throws NoSuchAlgorithmException {
-        App.main(new String[] { "SSH-384", "random" });
-        assertEquals(USAGE_MESSAGE, outContent.toString());
+        App.main(new String[] { "SHA-384", "random" });
+        assertEquals("7498395e72b58440a579c756511e5049231d7986066615381bcf49b3ca9e79f4b92b12650c941cf677b018425203974c" + System.lineSeparator(), outContent.toString());
     }
 
     @Test
